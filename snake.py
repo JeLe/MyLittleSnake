@@ -1,4 +1,3 @@
-
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
@@ -35,7 +34,7 @@ class carre(object):
 			glVertex3f(vertex[0],vertex[1],vertex[2])
 		glEnd()
 
-mysquare = carre(0,0, [0.3,0.5,0.1])
+mysquare = carre(0,0, [0.4,0.5,0.1])
 mysquare2 = carre(1,0, [0.,1.,0.])
 
 
