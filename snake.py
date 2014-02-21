@@ -16,13 +16,14 @@ grid=[]
 snake=[]
 food=[]
 snakeColor=[0.8,0.1,0.1]
+
+#c'est quoi ces variable ???? donne leur des noms plus explicites!
 c=0
 l=0
 i=-1
 j=0
 taille = 4
 dir = 'm'
-
 
 
 class carre(object):
@@ -69,6 +70,8 @@ def miam() :
 
 	food.append(carre(random.randint(0,7),random.randint(0,3),[0.8,0.4,0.5]))
 	print (random.randint(0,7))
+
+
 def InitGL(Width, Height):				
 	glClearColor(0.0, 0.0, 0.0, 0.0)	
 	glClearDepth(1.0)					
@@ -100,7 +103,7 @@ def DrawGLScene():
 	
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 	glLoadIdentity()
-	glTranslatef(-4., 1.069, -5.) 
+	glTranslatef(0., 0., -15.)
         
 	
 	for item in snake :
